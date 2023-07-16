@@ -1,0 +1,14 @@
+{
+    "name": "react-studies",
+    "version": "1.0.0",
+    "description": "My project description",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "axios": "^0.21.4",
+      "lodash": "^4.17.21"
+    }
+  }
