@@ -803,3 +803,46 @@ Another interesting thing about arrow functions is the implicit return. However,
 ```
 const Nav = () => <ul><li>Home</li></ul>
 ```
+
+## forEach
+In React, just like in plain JavaScript, arrow functions can be used in many different situations. One such situation is using it with, for example, the forEach() built-in array method.
+```
+[10, 20, 30].forEach(item => item * 10)
+```
+
+You could also write this code in ES5 syntax:
+
+```
+[10, 20, 30].forEach(function(item) {
+        return item * 10
+    }
+)
+```
+
+The arrow function has a single parameter, so you do not need to add parentheses around the item parameter (to the left of the arrow). Furthermore, since the arrow function fits on one line of code, you don’t need to use curly braces around the function body, or the return keyword; it's implicit.
+
+## Embedded JSX Expressions
+Allows Javascript values to be inserted into HTML of React elements. This can also be done with functions.
+
+## Ternary Operator
+It is a one line if-else:
+```
+let name = 'Bob';
+name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
+```
+
+They can be used inside of a JSX expression:
+```
+function Example() {
+    return (
+        <div className="heading">
+            <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
+        </div>
+    );
+};
+```
+
+Basically it does:
+```
+comparison ? true : false
+```
